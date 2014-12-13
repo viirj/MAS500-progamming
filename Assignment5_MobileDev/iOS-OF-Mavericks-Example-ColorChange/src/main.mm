@@ -2,6 +2,7 @@
 #include "ofApp.h"
 
 // HACK: to get it to compile with Mavericks, from https://github.com/openframeworks/openFrameworks/issues/3178#issuecomment-56519436
+
 extern "C"{
     size_t fwrite$UNIX2003( const void *a, size_t b, size_t c, FILE *d )
     {
@@ -19,6 +20,7 @@ extern "C"{
         return strtod(a, b);
     }
 }
+
 
 int main(){
     ofSetupOpenGL(1024,768, OF_FULLSCREEN);			// <-------- setup the GL context

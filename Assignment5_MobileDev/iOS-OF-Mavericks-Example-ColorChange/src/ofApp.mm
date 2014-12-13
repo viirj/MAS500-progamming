@@ -9,7 +9,6 @@ int colorTouch=15;
 void ofApp::setup(){
     lastTouch.set(0,0);
     ofBackground(255);
-
  
 }
 
@@ -25,8 +24,8 @@ void ofApp::draw(){
         ofSetColor(colorTouch+1,255,30);
         ofFill();
         ofCircle(lastTouch.x,lastTouch.y, 15);
-    }
-
+     }
+   
 }
 
 //--------------------------------------------------------------
@@ -36,6 +35,10 @@ void ofApp::exit(){
 
 //--------------------------------------------------------------
 void ofApp::touchDown(ofTouchEventArgs & touch){
+    
+
+    
+    
 }
 
 //--------------------------------------------------------------
